@@ -1,0 +1,37 @@
+@media (max-width: 900px) {
+    .nav {
+      background-position-x: 70vw;
+    }
+    .nav-content {
+      justify-content: center;
+      align-items: center;
+    }
+    .menu {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center
+    }
+    .hero-content a {
+      margin-top: 20px;
+    }
+  }
+
+  @media(max-width: 2560px){
+    .nav {
+        background-position-x:  40vw;
+    }
+}
+
+@media(max-height: 760px) {
+    .nav {
+        background-position-y: 200px;
+    }
+}
