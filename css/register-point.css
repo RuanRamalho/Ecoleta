@@ -27,11 +27,7 @@
 .nav-menu .menu a {
   color: var(--title-color);
   font-weight: bold;
-  transition: .5s;
-}
 
-.nav-menu .menu a:hover {
-  transform: translateX(8px);
 }
 
 form {

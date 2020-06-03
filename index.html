@@ -6,44 +6,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/hero.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/modal.css">
   <link rel="stylesheet" href="css/responsive.css">
   <title>Document</title>
 </head>
 
 <body>
-  <section class="nav">
-    <div class="nav-content">
+  <section id="page-home">
+    <div class="content">
       <header>
-        <div class="container">
-          <div class="nav-menu">
-            <div class="logo">
-              <img src="/assets/icones/logo.svg" alt="">
-            </div>
-            <div class="menu">
-              <span>
-                <img src="/assets/icones/log-in.svg" alt="">
-              </span>
-              <a href="./javascript">Cadastre um ponto de coleta</a>
-            </div>
-          </div>
-        </div>
+        <img src="/assets/icones/logo.svg" alt="Logomarca">
+        <a href="./register-point.html">
+          <span></span>
+          Cadastre um ponto de coleta
+        </a>
       </header>
-      <div class="hero">
-        <div class="container">
-          <div class="hero-content">
-            <h1>Seu MarketPlace de coleta de resíduos</h1>
-            <p>Ajudamos pessoas a econtrarem pontos de coletas
-              de forma eficiente.
-            </p>
-            <a href="./javascript">
-              <span></span>
-              <strong>Pesquisar pontos de coleta</strong>
-            </a>
-          </div>
-        </div>
-      </div>
+      <main>
+        <h1>Seu marketplace de coleta de resíduos</h1>
+        <p>Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente</p>
+        <a href="#">
+        <span></span>
+        <strong>Pesquisar pontos de coleta</strong>
+        </a>
+      </main>
     </div>
   </section>
+    
+  <section id="modal" class="hide">
+    <div class="content">
+      <div class="header">
+        <h1>Pontos de Coleta</h1>
+        <a href="">Fechar</a>
+      </div>
+      <form action="./search-results.html">
+        <label for="search">Cidade</label>
+        <div class="field">
+          <input type="text" name="search" placeholder="Pesquise por Cidade...">
+          <button>
+            <img src="/assets/icones/search.svg" alt="Buscar">
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <script src="/js/index.js"></script>
 </body>
 </html>
