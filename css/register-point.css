@@ -1,7 +1,7 @@
 .nav-content {
   width: 90%;
   max-width: 1100px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .nav-menu {
@@ -37,6 +37,7 @@
 form {
   background: #fff;
   width: 90%;
+  max-width: 730px;
   padding: 52px;
   margin: 80px auto;
   border-radius: 8px;
@@ -106,7 +107,7 @@ form button:hover {
 .items-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 16px;
 }
 
 .items-grid li {
@@ -135,4 +136,9 @@ form button:hover {
 .items-grid li.selected {
   background: #e1faec;
   border: 2px solid #34cb79;
+}
+
+.items-grid li img,
+.items-grid li span {
+  pointer-events: none;
 }
