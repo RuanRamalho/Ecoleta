@@ -102,3 +102,37 @@ form button {
 form button:hover {
   background-color: #2fb86e;
 }
+
+.items-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.items-grid li {
+  list-style-type: none;
+  display: flex;
+  height: 180px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 24px 16px;
+  background: #f0f0f5;
+  border: 2px solid #f0f0f5;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.items-grid li span {
+  margin-top: 12px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  color: var(--title-color);
+}
+
+.items-grid li.selected {
+  background: #e1faec;
+  border: 2px solid #34cb79;
+}
